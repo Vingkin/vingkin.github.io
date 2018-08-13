@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Vingkin</title>
+  
+  <subtitle>人们永远不会满意所在的地方的...</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://vingkin.github.io/"/>
+  <updated>2018-08-13T17:48:06.716Z</updated>
+  <id>http://vingkin.github.io/</id>
+  
+  <author>
+    <name>Vingkin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>盛金公式</title>
+    <link href="http://vingkin.github.io/ACM/%E6%95%B0%E8%AE%BA/%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F/%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F/"/>
+    <id>http://vingkin.github.io/ACM/数论/盛金公式/盛金公式/</id>
+    <published>2018-08-13T16:33:14.000Z</published>
+    <updated>2018-08-13T17:48:06.716Z</updated>
+    
+    <summary type="html">
+    
+      求解一元三次方程
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="数论" scheme="http://vingkin.github.io/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="盛金公式" scheme="http://vingkin.github.io/categories/ACM/%E6%95%B0%E8%AE%BA/%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F/"/>
+    
+    
+      <category term="ACM" scheme="http://vingkin.github.io/tags/ACM/"/>
+    
+      <category term="数论" scheme="http://vingkin.github.io/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>photo</title>
+    <link href="http://vingkin.github.io/photos/%E5%8D%97%E9%82%AE/photo/"/>
+    <id>http://vingkin.github.io/photos/南邮/photo/</id>
+    <published>2018-08-12T09:31:48.000Z</published>
+    <updated>2018-08-12T09:41:46.677Z</updated>
+    
+    <summary type="html">
+    
+      暑期在南邮
+    
+    </summary>
+    
+      <category term="photos" scheme="http://vingkin.github.io/categories/photos/"/>
+    
+      <category term="南邮" scheme="http://vingkin.github.io/categories/photos/%E5%8D%97%E9%82%AE/"/>
+    
+    
+      <category term="photos" scheme="http://vingkin.github.io/tags/photos/"/>
+    
+      <category term="南邮" scheme="http://vingkin.github.io/tags/%E5%8D%97%E9%82%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sonya and Robots</title>
+    <link href="http://vingkin.github.io/ACM/%E6%8E%92%E5%BA%8F/Sonya-and-Robots/"/>
+    <id>http://vingkin.github.io/ACM/排序/Sonya-and-Robots/</id>
+    <published>2018-08-09T10:28:34.000Z</published>
+    <updated>2018-08-09T11:56:53.099Z</updated>
+    
+    <summary type="html">
+    
+      CodeForces - 1004C
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="排序" scheme="http://vingkin.github.io/categories/ACM/%E6%8E%92%E5%BA%8F/"/>
+    
+    
+      <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
+    
+      <category term="set" scheme="http://vingkin.github.io/tags/set/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STL</title>
+    <link href="http://vingkin.github.io/ACM/STL/STL/"/>
+    <id>http://vingkin.github.io/ACM/STL/STL/</id>
+    <published>2018-08-07T16:34:14.000Z</published>
+    <updated>2018-08-12T13:11:00.732Z</updated>
+    
+    <summary type="html">
+    
+      算法竞赛进阶指南
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="STL" scheme="http://vingkin.github.io/categories/ACM/STL/"/>
+    
+    
+      <category term="STL" scheme="http://vingkin.github.io/tags/STL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Inversion Counting</title>
+    <link href="http://vingkin.github.io/ACM/%E9%80%86%E5%85%83/Inversion-Counting/"/>
+    <id>http://vingkin.github.io/ACM/逆元/Inversion-Counting/</id>
+    <published>2018-08-06T08:25:13.000Z</published>
+    <updated>2018-08-09T10:58:02.365Z</updated>
+    
+    <summary type="html">
+    
+      CodeForces - 911D
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="逆元" scheme="http://vingkin.github.io/categories/ACM/%E9%80%86%E5%85%83/"/>
+    
+    
+      <category term="逆元" scheme="http://vingkin.github.io/tags/%E9%80%86%E5%85%83/"/>
+    
+      <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
+    
+      <category term="归并排序" scheme="http://vingkin.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    
+      <category term="思维" scheme="http://vingkin.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字串查询</title>
+    <link href="http://vingkin.github.io/ACM/%E5%89%8D%E7%BC%80%E5%92%8C/%E5%AD%97%E4%B8%B2%E6%9F%A5%E8%AF%A2/"/>
+    <id>http://vingkin.github.io/ACM/前缀和/字串查询/</id>
+    <published>2018-08-05T16:29:46.000Z</published>
+    <updated>2018-08-07T14:26:19.823Z</updated>
+    
+    <summary type="html">
+    
+      2018年百度之星资格赛1002
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="前缀和" scheme="http://vingkin.github.io/categories/ACM/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+    
+      <category term="前缀和" scheme="http://vingkin.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+      <category term="树状数组" scheme="http://vingkin.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+</feed>

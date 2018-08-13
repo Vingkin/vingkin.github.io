@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Han">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/头像.JPG?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/头像.JPG?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/头像.JPG?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/头像.JPG?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="STL," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Vingkin" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="算法竞赛进阶指南">
+<meta name="keywords" content="STL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="STL">
+<meta property="og:url" content="http://vingkin.github.io/ACM/STL/STL/index.html">
+<meta property="og:site_name" content="Vingkin">
+<meta property="og:description" content="算法竞赛进阶指南">
+<meta property="og:locale" content="zh-Han">
+<meta property="og:updated_time" content="2018-08-12T13:11:00.732Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="STL">
+<meta name="twitter:description" content="算法竞赛进阶指南">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://vingkin.github.io/ACM/STL/STL/"/>
+
+
+
+
+
+  <title>STL | Vingkin</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Han">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Vingkin</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">人们永远不会满意所在的地方的...</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-list"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-ACM" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://vingkin.github.io/ACM/STL/STL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Vingkin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/image/头像.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Vingkin">
+    </span>
+
+    
+      <header class="post-header">
+
+    <div>
+        
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ start-----</div>
+    
+</div>
+        
+    </div>
+    
+        
+        
+          <h1 class="post-title" itemprop="name headline">STL</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-08T00:34:14+08:00">
+                2018-08-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-08-12T21:11:00+08:00">
+                2018-08-12
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ACM/" itemprop="url" rel="index">
+                    <span itemprop="name">ACM</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ACM/STL/" itemprop="url" rel="index">
+                    <span itemprop="name">STL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2,879
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  12
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  算法竞赛进阶指南
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="C-STL"><a href="#C-STL" class="headerlink" title="C++ STL"></a>C++ STL</h1><h2 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h2><h3 id="size-empty"><a href="#size-empty" class="headerlink" title="size/empty"></a>size/empty</h3><p>$size$函数返回$vector$的实际长度(包含的元素个数)，$empty$函数返回一个$bool$类型，表明$vector$是否为空。二者的时间复杂度都是$O(1)$;<br><strong>所有的STL容器都有这两个方法，含义也相同。</strong></p>
+<h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>$clear$函数把$vector$数组清空。</p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>迭代器就像STL容器的“指针”，可以用星号“*”操作符解除引用。<br>一个保存$int$的$vector$的迭代器声明方法为：<br>vector&lt; int&gt;::iterator it;<br>$vector$的迭代器是“随机访问迭代器”，可以把$vector$的迭代器与一个整数相加减，其行为和指针的移动类似。<br>可以把$vector$的两个迭代器相减，其结果也和指针相减类似，得到两个迭代器对应下标之间的距离。</p>
+<h3 id="begin-end"><a href="#begin-end" class="headerlink" title="begin/end"></a>begin/end</h3><p>$begin$函数返回指向$vector$中第一个元素的迭代器。例如$a$是一个非空的$vector$，则$*a.begin()$与$a[0]$的作用相同。<br>所有的容器都可以视作一个“前闭后开”的结构，$end$函数返回$vector$的尾部，即第$n$个元素再往后的“边界”。<br>$*end()$与$a[n]$都是越界访问，其中$n=a.size()$。<br>下面两份代码都遍历了$vector&lt; int&gt; a$，并输出他的所有元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0; i&lt;a.size(); i++)</span><br><span class="line">	cout &lt;&lt; a[i] &lt;&lt; endl;</span><br><span class="line">for(vector&lt;int&gt;::iterator it=a.begin(); it!a.end(); it++)</span><br><span class="line">	cout &lt;&lt; *it &lt;&lt; endl;</span><br></pre></td></tr></table></figure></p>
+<h3 id="front-back"><a href="#front-back" class="headerlink" title="front/back"></a>front/back</h3><p>$front$函数返回$vector$的第一个元素，等价于$*a.begin()$和$a[0]$。<br>$back$函数返回$vector$的最后一个元素，等价于*—a.end()和a[a.size()-1].</p>
+<h3 id="push-back-pop-back"><a href="#push-back-pop-back" class="headerlink" title="push_back/pop_back"></a>push_back/pop_back</h3><p>a.push_back(x)把元素$x$插入到vector a的尾部。<br>a.pop_back()删除vector a的最后一个元素。</p>
+<h2 id="queue"><a href="#queue" class="headerlink" title="queue"></a>queue</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th style="text-align:left">描述</th>
+<th>示例</th>
+<th>时间复杂度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>push</td>
+<td style="text-align:left">入队(从队尾)</td>
+<td>q.push(element);</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td>pop</td>
+<td style="text-align:left">出队(从队头)</td>
+<td>q.pop();</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td>front</td>
+<td style="text-align:left">队头元素</td>
+<td>int x = q.front();</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td>back</td>
+<td style="text-align:left">队尾元素</td>
+<td>int y = q.back();</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="priority-queue"><a href="#priority-queue" class="headerlink" title="priority_queue"></a>priority_queue</h3><p>priority_queue可理解为一个<strong>大根二叉堆</strong>。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方法</th>
+<th>描述</th>
+<th>示例</th>
+<th>时间复杂度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">push</td>
+<td>把元素插入堆</td>
+<td>q.push(x);</td>
+<td>O(logn)</td>
+</tr>
+<tr>
+<td style="text-align:center">pop</td>
+<td>删除堆顶元素</td>
+<td>q.pop();</td>
+<td>O(logn)</td>
+</tr>
+<tr>
+<td style="text-align:center">top</td>
+<td>查询堆顶元素(最大值)</td>
+<td>int x = q.top();</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>priority_queue实现小根堆有两种方式。</p>
+<ol>
+<li>将插入的元素取反插入；</li>
+<li>重载“&lt;”运算符。</li>
+</ol>
+<h3 id="重载“-lt-”运算符"><a href="#重载“-lt-”运算符" class="headerlink" title="重载“&lt;”运算符"></a>重载“&lt;”运算符</h3><p>priority_queue中存储的元素必须定于“小于号”，较大的元素会被放在堆顶。内置的<br>int,string等类型本身就可以比较大下。若使用自定义的结构体类型，则需要重载<br>“&lt;”运算符。<br>例如下面的poi结构体保存了二维平面上的点的编号和坐标，比较大小时，先比横坐标，<br>再比纵坐标，并且考虑了精度误差。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">struct poi &#123;</span><br><span class="line">	int id;</span><br><span class="line">	double x, y;</span><br><span class="line">&#125;;</span><br><span class="line">bool operator &lt;(const poi &amp;a, const poi &amp;b)</span><br><span class="line">&#123;</span><br><span class="line">	return a.x+eps&lt;b.x || a.x&lt;b.x+eps &amp;&amp; a.y&lt;b.y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方法</th>
+<th>描述</th>
+<th>示例</th>
+<th>时间复杂度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">[]</td>
+<td>随机访问</td>
+<td>与vector类似</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">begin/end</td>
+<td>deque的头/尾迭代器</td>
+<td>与vector迭代器类似</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">front/back</td>
+<td>队头/队尾元素</td>
+<td>与queue类似</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">push_back</td>
+<td>从队尾入队</td>
+<td>q.push_back(x);</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">push_front</td>
+<td>从队头入队</td>
+<td>q.push_front(x);</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">pop_front</td>
+<td>从队头出队</td>
+<td>q.pop_front();</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">pop_back</td>
+<td>从队尾出队</td>
+<td>q.pop_back();</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">clear</td>
+<td>清空队列</td>
+<td>q.clear();</td>
+<td>O(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="set"><a href="#set" class="headerlink" title="set"></a>set</h2><p>头文件set主要包括set和multiset两个容器，分别是“有序集合”和“有序多重集”，即前者的元素不能重复，而后者可以包含若干个相等的元素。set和multiset的内部实现是一颗红黑树，他们支持的函数基本相同。</p>
+<h3 id="size-empty-clear"><a href="#size-empty-clear" class="headerlink" title="size/empty/clear"></a>size/empty/clear</h3><p>与vector类似，分别为元素个数、是否为空、清空。前两者的时间复杂度为O(1)。</p>
+<h3 id="迭代器-1"><a href="#迭代器-1" class="headerlink" title="迭代器"></a>迭代器</h3><p>set和multiset的迭代器称为“双向访问迭代器”，不支持“随机访问”，支持星号解除引用，仅支持“++”和“—”两个与算术相关的操作。<br>设it是一个迭代器，例如set&lt; int&gt;::iterator it;<br>若把it++，则it将会指向“下一个”元素。这里的“下一个”是指在元素从小到大排序的结果中，排在it下一名的元素。同理，若把it—，则it将会指向排在“上一个”的元素。<br><strong>++</strong>与<strong>—</strong>操作符的时间复杂度都是$O(logn)$。执行操作前后，务必仔细检查，避免迭代器指向的位置超出首、尾迭代器之间的范围。</p>
+<h3 id="begin-end-1"><a href="#begin-end-1" class="headerlink" title="begin/end"></a>begin/end</h3><p>返回集合的首、尾迭代器，时间复杂度为O(1)。<br>s.begin()是指向集合中最小元素的迭代器。<br>s.end()是指向集合中最大元素下一个位置的迭代器。(stl都是前开后闭)</p>
+<h3 id="insert"><a href="#insert" class="headerlink" title="insert"></a>insert</h3><p>s.insert(x)把一个元素x插入到集合s中，时间复杂度为O(logn)。<br>在set中，若元素存在，则不会重复插入该元素，对集合的状态无影响。<br>下面的代码把n个整数插入有序多重集multiset，并从小到大输出，时间复杂度为O(nlogn)，相当于进行了一次排序。假设n个整数目前存储在数组a[1\cdots n]中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">multiset&lt;int&gt; s;</span><br><span class="line">for(int i=1; i&lt;=n; i++)</span><br><span class="line">	s.insert(a[i]);</span><br><span class="line">for(multiset&lt;int&gt;::iterator it=s.begin(); it!=s.end(); it++)</span><br><span class="line">	cout &lt;&lt; *it &lt;&lt; endl;</span><br></pre></td></tr></table></figure></p>
+<h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><p>s.find(x)在集合s中查找等于x元素，并返回指向该元素的迭代器。若不存在，则返回s.end()。时间复杂度O(logn)。</p>
+<h3 id="erase"><a href="#erase" class="headerlink" title="erase"></a>erase</h3><p>设it是一个迭代器，s.erase(it)从s中删除迭代器it指向的元素，时间复杂度为O(k+logn)。<br>设x是一个元素，s.erase(x)从s中删除所有等于x的元素，时间复杂度为O(k+logn)，其中k为被删除的元素个数。<br>如果想从multiset中删掉至多1个等于x的元素，可以执行：<br><code>if((it=s.find(x))!=s.end())    s.erase(it);</code></p>
+<h3 id="count"><a href="#count" class="headerlink" title="count"></a>count</h3><p>s.count(x)返回集合s中等于x的元素个数，时间复杂度为O(k+logn)，其中k为元素x的个数。</p>
+<h2 id="map"><a href="#map" class="headerlink" title="map"></a>map</h2><p>map容器是一个键值对(key-value)映射。其内部实现是一棵以key为关键码的红黑树。map的key和value可以是任意类型，其中key必须定义“小于号”运算符。</p>
+<h3 id="size-empty-clear-begin-end"><a href="#size-empty-clear-begin-end" class="headerlink" title="size/empty/clear/begin/end"></a>size/empty/clear/begin/end</h3><p>与set类似，分别为元素个数、是否为空、清空、首迭代器、尾迭代器。</p>
+<h3 id="迭代器-2"><a href="#迭代器-2" class="headerlink" title="迭代器"></a>迭代器</h3><p>map的迭代器与set一样，也是“双向访问迭代器”。对map的迭代器解除引用后，将得到一个二元组pair&lt; key_type,value_type&gt;。</p>
+<h3 id="insert-erase"><a href="#insert-erase" class="headerlink" title="insert/erase"></a>insert/erase</h3><p>与set类似，分别为插入、删除。insert的参数是pair&lt; key_type,value_type&gt;，erase的参数可以是pair或者迭代器。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">map&lt;int,int&gt; h;</span><br><span class="line">h.insert(make_pair(1,2));</span><br><span class="line">h.insert(make_pair(2,3));</span><br><span class="line">map&lt;int,int&gt;::iterator it = h.begin();</span><br><span class="line">pair&lt;int,int&gt; p = *it;</span><br><span class="line">h.erase(it);</span><br><span class="line">h.erase(make_pair(2,3));</span><br><span class="line">cout &lt;&lt; p.first &lt;&lt; &apos; &apos; &lt;&lt; p.second &lt;&lt; endl;</span><br></pre></td></tr></table></figure></p>
+<h3 id="find-1"><a href="#find-1" class="headerlink" title="find"></a>find</h3><p>h.find(x)在变量名为h的map中查找key为x的二元组，并返回指向该二元组的迭代器。若不存在，返回h.end()。时间复杂度为O(logn)。</p>
+<h3 id="操作符"><a href="#操作符" class="headerlink" title="[ ]操作符"></a>[ ]操作符</h3><p>h[key]返回key映射到value的引用，时间复杂度为O(logn)。<br>[ ]操作符是map最吸引人的地方。我们可以很方便地通过h[key]来得到key对应的value，还可以对h[key]进行赋值操作，改变key对应的value。<br><strong>需要特别注意的是</strong>，若查找的key不存在，则执行h[key]后，h会自动新建一个二元组(key,zero)，并返回zero的引用。这里zero表示一个广义的“零值”。如果查找之后不对h[key]进行赋值，那么时间一长，h会包含很多无用的“零值二元组”，白白地占用了空间，降低了程序运行效率。<strong>强烈建议在用[ ]操作符查询之前，先用find方法检查key的存在性</strong>。<br>tips：还可以用count检查key的存在性。</p>
+<h4 id="用map统计字符串中字符出现的次数"><a href="#用map统计字符串中字符出现的次数" class="headerlink" title="用map统计字符串中字符出现的次数"></a>用map统计字符串中字符出现的次数</h4><p>给定n个字符，m个问题，每个问题询问一个字符出现的次数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">map&lt;string, int&gt; h;</span><br><span class="line">char str[1005];</span><br><span class="line">for(int i=1; i&lt;=n; i++)</span><br><span class="line">&#123;</span><br><span class="line">	cin &gt;&gt; str[i];</span><br><span class="line">	h[str]++;</span><br><span class="line">&#125;</span><br><span class="line">for(int i=1; i&lt;=m; i++)</span><br><span class="line">&#123;</span><br><span class="line">	cin &gt;&gt; str;</span><br><span class="line">	if(h.find(str)==h.end()) </span><br><span class="line">		puts(&quot;0&quot;);</span><br><span class="line">	else</span><br><span class="line">		printf(&quot;%d\n&quot;, h[str]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="bitset"><a href="#bitset" class="headerlink" title="bitset"></a>bitset</h2><p>bitset可以看作一个多位二进制数，每8位占用1个字节，相当于采用了状态压缩的二进制数组，并支持基本的位运算。在估算程序运行时间时，我们一般以32位整数的运算次数为基础，因此n位bitset执行一次位运算的复杂度可视为n/32，效率较高。</p>
+<p><strong>声明</strong><br>bitset<10000> s;<br>表示一个10000位二进制数，&lt;&gt;中填写位数。下面把位数记为n。<br><strong>位运算操作符</strong><br>～s：返回对bitset s 按位取反的结果。<br>&amp;,|,^：返回对两个位数相同的bitset执行按位与、或、异或运算的结果。<br>>&gt;,&lt;&lt;：返回把一个bitset右移、左移若干位的结果。<br>==，!=：比较两个bitset代表的二进制数是否相等。</10000></p>
+<h3 id="操作符-1"><a href="#操作符-1" class="headerlink" title="[ ]操作符"></a>[ ]操作符</h3><p>s[k]表示s的第k位，既可以取值，也可以赋值。<br>在10000位二进制数中，最低位为s[0]，最高位为s[9999]。</p>
+<h3 id="count-1"><a href="#count-1" class="headerlink" title="count"></a>count</h3><p>s.count()返回有多少位1。</p>
+<h3 id="any-none"><a href="#any-none" class="headerlink" title="any/none"></a>any/none</h3><p>若s所有位都为0，则s.any()返回false，s.none()返回true。<br>若s至少一位为1，则s.any()返回ture，s.none()返回false。</p>
+<h3 id="set-reset-flip"><a href="#set-reset-flip" class="headerlink" title="set/reset/flip"></a>set/reset/flip</h3><p>s.set()把所有位变为1。<br>s.set(k,v)把s的第k位改为v，即s[k]=v。<br>s.reset()把s所有位变为0。<br>s.reset(k)把s的第k位变为0，即s[k]=0。<br>s.flip()把s所有位取反，即s=～s。<br>s.flip(k)把s的第k位取反，即s[k]^=1。</p>
+<h2 id="algorithm"><a href="#algorithm" class="headerlink" title="algorithm"></a>algorithm</h2><h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse"></a>reverse</h3><p>翻转一个vector：<br><code>reverse(a.begin(),a.end());</code><br>翻转一个数组：<br><code>reverse(a+1,a+n+1);</code></p>
+<h3 id="unique"><a href="#unique" class="headerlink" title="unique"></a>unique</h3><p>返回去重之后的尾迭代器（或指针），仍然位前闭后开，即这个尾迭代器是去重之后末尾元素的下一个位置。该函数常用于离散化，利用迭代器（或指针）的减法，可算出去重后的元素个数m。<br>把一个vector去重：<br><code>int m = unique(a.begin(),a,end()) - a.begin();</code><br>把一个数组去重，元素存放在下标1-n：<br><code>int m = unique(a+1,a+n+1) - (a+1);</code></p>
+<h3 id="random-shuffle"><a href="#random-shuffle" class="headerlink" title="random_shuffle"></a>random_shuffle</h3><p><strong>随机打乱</strong><br>与reverse用法相同。</p>
+<h3 id="next-permutation"><a href="#next-permutation" class="headerlink" title="next_permutation"></a>next_permutation</h3><p><strong>下一个排列</strong><br>把两个迭代器（或指针）指定的部分看作一个排列，求出这些元素构成的全排列中，字典序排在下一个的排列，并直接在序列上更新。另外，若不存在排名更靠后的排列，则返回false，否则返回true。同理也有prev_permutation函数。</p>
+<p><strong>下面按照字典序输出1-n的n!种全排列</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for(int i=1; i&lt;=n; i++)</span><br><span class="line">	a[i] = i;</span><br><span class="line">do</span><br><span class="line">&#123;</span><br><span class="line">	for(int i=1; i&lt;=n; i++)</span><br><span class="line">		cout &lt;&lt; a[i] &lt;&lt; &apos; &apos;;</span><br><span class="line">	cout &lt;&lt; a[n] &lt;&lt; endl;</span><br><span class="line">&#125;while(next_permutation(a+1,a+n+1));</span><br></pre></td></tr></table></figure></p>
+<h3 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">struct rec &#123;</span><br><span class="line">	int id, x, y;</span><br><span class="line">&#125;;</span><br><span class="line">vector&lt;rec&gt; a;</span><br><span class="line">bool operator &lt;(const rec &amp;a, const rec &amp;b)</span><br><span class="line">&#123;</span><br><span class="line">	return a.x&lt;b.x || a.x==b.x &amp;&amp; a.y&lt;b.y;</span><br><span class="line">&#125;</span><br><span class="line">sort(a.begin(), a.end());</span><br></pre></td></tr></table></figure>
+<h2 id="函数使用"><a href="#函数使用" class="headerlink" title="函数使用"></a>函数使用</h2><h3 id="insert-1"><a href="#insert-1" class="headerlink" title="insert()"></a>insert()</h3><p>C++容器的insert()函数有以下三种用法：最终*it=val;</p>
+<p>用法1：在制定位置it前“插入”职位val的元素，返回指向这个元素的迭代器。<br><code>iterator insert(iterator it, const TYPE &amp;val);</code></p>
+<p>用法2：在指定位置it前“插入”num个值为val的元素。<br><code>void insert(iterator it, size_type num, const TYPE &amp;val);</code></p>
+<p>用法3：在指定位置it前插入区间[start, end)的所有元素。<br><code>void insert(iterator it, input_iterator start, input_iterator end);</code></p>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/STL/" rel="tag"><i class="fa fa-tag"></i> STL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ACM/逆元/Inversion-Counting/" rel="next" title="Inversion Counting">
+                <i class="fa fa-chevron-left"></i> Inversion Counting
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ACM/排序/Sonya-and-Robots/" rel="prev" title="Sonya and Robots">
+                Sonya and Robots <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/image/头像.JPG"
+                alt="Vingkin" />
+            
+              <p class="site-author-name" itemprop="name">Vingkin</p>
+              <p class="site-description motion-element" itemprop="description">有时候你穷极一生所寻找的东西，其实都在你身边，只是你从来没有发觉而已...</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Vingkin/" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="1830053226" target="_blank" title="QQ">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQ</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                传送门
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/kuangbin/" title="/%bin" target="_blank">/%bin</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          <div id="music163player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=1&id=38358214&auto=0&height=66">
+    </iframe>
+</div>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-STL"><span class="nav-number">1.</span> <span class="nav-text">C++ STL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#vector"><span class="nav-number">1.1.</span> <span class="nav-text">vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#size-empty"><span class="nav-number">1.1.1.</span> <span class="nav-text">size/empty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clear"><span class="nav-number">1.1.2.</span> <span class="nav-text">clear</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器"><span class="nav-number">1.1.3.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#begin-end"><span class="nav-number">1.1.4.</span> <span class="nav-text">begin/end</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#front-back"><span class="nav-number">1.1.5.</span> <span class="nav-text">front/back</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push-back-pop-back"><span class="nav-number">1.1.6.</span> <span class="nav-text">push_back/pop_back</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#queue"><span class="nav-number">1.2.</span> <span class="nav-text">queue</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#priority-queue"><span class="nav-number">1.2.1.</span> <span class="nav-text">priority_queue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重载“-lt-”运算符"><span class="nav-number">1.2.2.</span> <span class="nav-text">重载“&lt;”运算符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deque"><span class="nav-number">1.3.</span> <span class="nav-text">deque</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#set"><span class="nav-number">1.4.</span> <span class="nav-text">set</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#size-empty-clear"><span class="nav-number">1.4.1.</span> <span class="nav-text">size/empty/clear</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器-1"><span class="nav-number">1.4.2.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#begin-end-1"><span class="nav-number">1.4.3.</span> <span class="nav-text">begin/end</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#insert"><span class="nav-number">1.4.4.</span> <span class="nav-text">insert</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#find"><span class="nav-number">1.4.5.</span> <span class="nav-text">find</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#erase"><span class="nav-number">1.4.6.</span> <span class="nav-text">erase</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#count"><span class="nav-number">1.4.7.</span> <span class="nav-text">count</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#map"><span class="nav-number">1.5.</span> <span class="nav-text">map</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#size-empty-clear-begin-end"><span class="nav-number">1.5.1.</span> <span class="nav-text">size/empty/clear/begin/end</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器-2"><span class="nav-number">1.5.2.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#insert-erase"><span class="nav-number">1.5.3.</span> <span class="nav-text">insert/erase</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#find-1"><span class="nav-number">1.5.4.</span> <span class="nav-text">find</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作符"><span class="nav-number">1.5.5.</span> <span class="nav-text">[ ]操作符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用map统计字符串中字符出现的次数"><span class="nav-number">1.5.5.1.</span> <span class="nav-text">用map统计字符串中字符出现的次数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bitset"><span class="nav-number">1.6.</span> <span class="nav-text">bitset</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#操作符-1"><span class="nav-number">1.6.1.</span> <span class="nav-text">[ ]操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#count-1"><span class="nav-number">1.6.2.</span> <span class="nav-text">count</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#any-none"><span class="nav-number">1.6.3.</span> <span class="nav-text">any/none</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#set-reset-flip"><span class="nav-number">1.6.4.</span> <span class="nav-text">set/reset/flip</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#algorithm"><span class="nav-number">1.7.</span> <span class="nav-text">algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#reverse"><span class="nav-number">1.7.1.</span> <span class="nav-text">reverse</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#unique"><span class="nav-number">1.7.2.</span> <span class="nav-text">unique</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-shuffle"><span class="nav-number">1.7.3.</span> <span class="nav-text">random_shuffle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next-permutation"><span class="nav-number">1.7.4.</span> <span class="nav-text">next_permutation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sort"><span class="nav-number">1.7.5.</span> <span class="nav-text">sort</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数使用"><span class="nav-number">1.8.</span> <span class="nav-text">函数使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#insert-1"><span class="nav-number">1.8.1.</span> <span class="nav-text">insert()</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-Star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Vingkin</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">5.9k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+<script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
