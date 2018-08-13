@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-08-13T17:48:06.716Z</updated>
+  <updated>2018-08-13T18:15:15.531Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>高斯消元</title>
+    <link href="http://vingkin.github.io/ACM/%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/"/>
+    <id>http://vingkin.github.io/ACM/数论/高斯消元/高斯消元/</id>
+    <published>2018-08-13T18:07:48.000Z</published>
+    <updated>2018-08-13T18:15:15.531Z</updated>
+    
+    <summary type="html">
+    
+      算法竞赛进阶指南
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="数论" scheme="http://vingkin.github.io/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="高斯消元" scheme="http://vingkin.github.io/categories/ACM/%E6%95%B0%E8%AE%BA/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/"/>
+    
+    
+      <category term="高斯消元" scheme="http://vingkin.github.io/tags/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/"/>
+    
+  </entry>
+  
+  <entry>
     <title>盛金公式</title>
     <link href="http://vingkin.github.io/ACM/%E6%95%B0%E8%AE%BA/%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F/%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F/"/>
     <id>http://vingkin.github.io/ACM/数论/盛金公式/盛金公式/</id>
     <published>2018-08-13T16:33:14.000Z</published>
-    <updated>2018-08-13T17:48:06.716Z</updated>
+    <updated>2018-08-13T18:20:31.178Z</updated>
     
     <summary type="html">
     
@@ -47,7 +71,7 @@
     <link href="http://vingkin.github.io/photos/%E5%8D%97%E9%82%AE/photo/"/>
     <id>http://vingkin.github.io/photos/南邮/photo/</id>
     <published>2018-08-12T09:31:48.000Z</published>
-    <updated>2018-08-12T09:41:46.677Z</updated>
+    <updated>2018-08-13T18:08:31.707Z</updated>
     
     <summary type="html">
     

@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[高斯消元]]></title>
+    <url>%2FACM%2F%E6%95%B0%E8%AE%BA%2F%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%2F%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%2F</url>
+    <content type="text"><![CDATA[高斯消元 模板 12345678910111213141516171819202122232425262728293031323334// 此模板只能解决有解的情况，// 但是可以通过定义解决无穷解与无解的情况// c[][]储存的是系数矩阵// b[]储存的是尾数矩阵// 最终a[][]是一个对角线矩阵void Gauss()&#123; for(int i=1; i&lt;=n; i++) &#123; for(int j=i; j&lt;=n; j++) &#123; if(fabs(c[j][i])&gt;eps) &#123; for(int k=1; k&lt;=n; k++) &#123; swap(c[i][k], c[j][k]); &#125; swap(b[i], b[j]); &#125; &#125; for(int j=1; j&lt;=n; j++) &#123; if(i==j) continue; double rate = c[j][i]/c[i][i]; for(int k=i; k&lt;=n; k++) c[j][k] -= c[i][k]*rate; b[j] -= b[i]*rate; &#125; &#125; for(int i=1; i&lt;n; i++) printf(&quot;%.3lf &quot;, b[i]/c[i][i]); printf(&quot;%.3lf\n&quot;, b[n]/c[n][n]);&#125;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>数论</category>
+        <category>高斯消元</category>
+      </categories>
+      <tags>
+        <tag>高斯消元</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[盛金公式]]></title>
     <url>%2FACM%2F%E6%95%B0%E8%AE%BA%2F%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F%2F%E7%9B%9B%E9%87%91%E5%85%AC%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[盛金公式一元三次方程$ax^3+bx^2+cx+d=0(a,b,c,d\in R,a\neq 0)$ 重根判别式 \begin{cases} A=b^2-3ac\\ B=bc-9ad\\ C=c^2-3bd\\ \end{cases}总判别式 $\delta =B^2-4AC$ 盛金公式1：当A=B=0时，$X_1=X_2=X_3=\frac{-b}{3q}=\frac{-c}{b}=\frac{-3d}{c}$ 盛金公式2：当$\Delta =B^2-4AC&gt;0$时，$X_1=\frac{-b-(\sqrt[3]{Y_1}+\sqrt[3]{Y_2})}{3a}$$X_{2,3}=\frac{-b+\frac{1}{2}(\sqrt[3]{Y_1}+\sqrt[3]{Y_2})\pm \frac{\sqrt[]{3}}{2}(\sqrt[3]{Y_1}-\sqrt[3]{Y_2})i}{3a}$其中$Y_{1,2}=Ab+3a(\frac{-B\pm sqrt[]{B^2-4AC}}{2}),i^2=-1$。 盛金公式3：当$\Delta =B^2-4AC=0$时，$X_1=\frac{-b}{a}+K$;$X_{2,3}=\frac{-K}{2}$;其中$K=\frac{B}{A},(A\pm 0)$。 盛金公式4：当$\Delta =B^2-4AC&lt;0$时，$X_1=\frac{-b-2\sqrt[]{A}cos\frac{\theta}{3}}{3a}$;$X_{2,3}=\frac{-b+\sqrt[]{A}(cos\frac{\theta}{3}\pm \sqrt[]{3}sin\frac{\theta}{3})}{3a}$;其中$\theta =arccosT$$T=\frac{2Ab-3aB}{2A\sqrt[]{A}}$。]]></content>
+    <content type="text"><![CDATA[盛金公式一元三次方程$ax^3+bx^2+cx+d=0(a,b,c,d\in R,a\neq 0)$ 重根判别式 \begin{cases} A=b^2-3ac\\ B=bc-9ad\\ C=c^2-3bd\\ \end{cases}总判别式 $\Delta =B^2-4AC$ 盛金公式1：当A=B=0时，$X_1=X_2=X_3=\frac{-b}{3a}=\frac{-c}{b}=\frac{-3d}{c}$ 盛金公式2：当$\Delta =B^2-4AC&gt;0$时，$X_1=\frac{-b-(\sqrt[3]{Y_1}+\sqrt[3]{Y_2})}{3a}$$X_{2,3}=\frac{-b+\frac{1}{2}(\sqrt[3]{Y_1}+\sqrt[3]{Y_2})\pm \frac{\sqrt[]{3}}{2}(\sqrt[3]{Y_1}-\sqrt[3]{Y_2})i}{3a}$其中$Y_{1,2}=Ab+3a(\frac{-B\pm \sqrt[]{B^2-4AC}}{2}),i^2=-1$。 盛金公式3：当$\Delta =B^2-4AC=0$时，$X_1=\frac{-b}{a}+K$;$X_{2,3}=\frac{-K}{2}$;其中$K=\frac{B}{A},(A\neq 0)$。 盛金公式4：当$\Delta =B^2-4AC&lt;0$时，$X_1=\frac{-b-2\sqrt[]{A}cos\frac{\theta}{3}}{3a}$;$X_{2,3}=\frac{-b+\sqrt[]{A}(cos\frac{\theta}{3}\pm \sqrt[]{3}sin\frac{\theta}{3})}{3a}$;其中$\theta =arccosT$$T=\frac{2Ab-3aB}{2A\sqrt[]{A}}$。]]></content>
       <categories>
         <category>ACM</category>
         <category>数论</category>
