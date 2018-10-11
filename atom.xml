@@ -106,9 +106,9 @@
       <category term="排序" scheme="http://vingkin.github.io/categories/ACM/%E6%8E%92%E5%BA%8F/"/>
     
     
-      <category term="set" scheme="http://vingkin.github.io/tags/set/"/>
-    
       <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
+    
+      <category term="set" scheme="http://vingkin.github.io/tags/set/"/>
     
   </entry>
   
@@ -152,9 +152,9 @@
       <category term="逆元" scheme="http://vingkin.github.io/categories/ACM/%E9%80%86%E5%85%83/"/>
     
     
-      <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
-    
       <category term="逆元" scheme="http://vingkin.github.io/tags/%E9%80%86%E5%85%83/"/>
+    
+      <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
     
       <category term="归并排序" scheme="http://vingkin.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
     
