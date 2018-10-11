@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-08-13T18:15:15.531Z</updated>
+  <updated>2018-10-11T05:23:30.623Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>裴蜀定理</title>
+    <link href="http://vingkin.github.io/ACM/%E6%95%B0%E8%AE%BA/%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86/"/>
+    <id>http://vingkin.github.io/ACM/数论/裴蜀定理/</id>
+    <published>2018-10-10T16:26:12.000Z</published>
+    <updated>2018-10-11T05:23:30.623Z</updated>
+    
+    <summary type="html">
+    
+      Nowcoder Wannafly挑战赛22
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="数论" scheme="http://vingkin.github.io/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
+    
+    
+      <category term="数论" scheme="http://vingkin.github.io/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>高斯消元</title>
@@ -67,30 +89,6 @@
   </entry>
   
   <entry>
-    <title>photo</title>
-    <link href="http://vingkin.github.io/photos/%E5%8D%97%E9%82%AE/photo/"/>
-    <id>http://vingkin.github.io/photos/南邮/photo/</id>
-    <published>2018-08-12T09:31:48.000Z</published>
-    <updated>2018-08-13T18:08:31.707Z</updated>
-    
-    <summary type="html">
-    
-      暑期在南邮
-    
-    </summary>
-    
-      <category term="photos" scheme="http://vingkin.github.io/categories/photos/"/>
-    
-      <category term="南邮" scheme="http://vingkin.github.io/categories/photos/%E5%8D%97%E9%82%AE/"/>
-    
-    
-      <category term="photos" scheme="http://vingkin.github.io/tags/photos/"/>
-    
-      <category term="南邮" scheme="http://vingkin.github.io/tags/%E5%8D%97%E9%82%AE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Sonya and Robots</title>
     <link href="http://vingkin.github.io/ACM/%E6%8E%92%E5%BA%8F/Sonya-and-Robots/"/>
     <id>http://vingkin.github.io/ACM/排序/Sonya-and-Robots/</id>
@@ -108,9 +106,9 @@
       <category term="排序" scheme="http://vingkin.github.io/categories/ACM/%E6%8E%92%E5%BA%8F/"/>
     
     
-      <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
-    
       <category term="set" scheme="http://vingkin.github.io/tags/set/"/>
+    
+      <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
     
   </entry>
   
@@ -154,9 +152,9 @@
       <category term="逆元" scheme="http://vingkin.github.io/categories/ACM/%E9%80%86%E5%85%83/"/>
     
     
-      <category term="逆元" scheme="http://vingkin.github.io/tags/%E9%80%86%E5%85%83/"/>
-    
       <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
+    
+      <category term="逆元" scheme="http://vingkin.github.io/tags/%E9%80%86%E5%85%83/"/>
     
       <category term="归并排序" scheme="http://vingkin.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
     
