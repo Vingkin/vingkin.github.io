@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[裴蜀定理]]></title>
     <url>%2FACM%2F%E6%95%B0%E8%AE%BA%2F%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86%2F</url>
-    <content type="text"><![CDATA[裴蜀定理$$若a,b是整数，且gcd(a,b)=d, 那么对于任意的整数x,y, ax+by都一定是d的倍数。特别地，一定存在整数x,y使ax+by=d成立。$$它的一个重要的推论是：a,b互质的充要条件是存在整数x,y使ax+by=1。]]></content>
+    <content type="text"><![CDATA[裴蜀定理$$若a,b是整数，且gcd(a,b)=d, 那么对于任意的整数x,y, ax+by都一定是d的倍数。特别地，一定存在整数x,y使ax+by=d成立。$$它的一个重要的推论是：a,b互质的充要条件是存在整数x,y使ax+by=1。$$ 例题 计数器$$ 题目描述有一个计数器，计数器的初始值为0，每次操作你可以把计数器的值加上$a_1,a_2,\cdots , a_n$中的任意一个整数，操作次数不限（可以为0次），问计数器的值对m取模后有几种可能？ 输入描述：第一行两个整数n,m接下来一行n个整数表示$a_1,a_2,\cdots , a_n$$1\leq n\leq 100$$1\leq m, a_1, a_2,\cdots ,a_n\leq 1000000000$ 输出描述：输出一个整数表示答案 示例1 输入3 66 4 8 输出3 Code123456789101112131415161718192021222324252627282930313233343536373839#include &lt;stdio.h&gt;#include &lt;iostream&gt;#include &lt;cstdlib&gt;#include &lt;cmath&gt;#include &lt;cctype&gt;#include &lt;string&gt;#include &lt;cstring&gt;#include &lt;algorithm&gt;#include &lt;stack&gt;#include &lt;queue&gt;#include &lt;set&gt;#include &lt;map&gt;#include &lt;ctime&gt;#include &lt;vector&gt;#include &lt;fstream&gt;#include &lt;list&gt;#include &lt;iomanip&gt;#include &lt;numeric&gt;using namespace std;typedef long long ll;typedef unsigned long long ull;#define ms(s) memset(s, 0, sizeof(s))const int inf = 0x3f3f3f3f;int n, m, s[105];int main(int argc, char * argv[]) &#123; ios::sync_with_stdio(false); cin.tie(0); cin &gt;&gt; n &gt;&gt; m; int tmp = m; for(int i=0; i&lt;n; i++) cin &gt;&gt; s[i]; for(int i=0; i&lt;n; i++) &#123; tmp = __gcd(tmp, s[i]); &#125; cout &lt;&lt; m/tmp &lt;&lt; endl; return 0;&#125;]]></content>
       <categories>
         <category>ACM</category>
         <category>数论</category>

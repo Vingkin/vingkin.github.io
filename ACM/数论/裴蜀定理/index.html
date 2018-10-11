@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Vingkin">
 <meta property="og:description" content="Nowcoder Wannafly挑战赛22">
 <meta property="og:locale" content="zh-Han">
-<meta property="og:updated_time" content="2018-10-11T05:23:30.623Z">
+<meta property="og:updated_time" content="2018-10-11T08:24:49.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="裴蜀定理">
 <meta name="twitter:description" content="Nowcoder Wannafly挑战赛22">
@@ -365,7 +365,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-10-11T13:23:30+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-10-11T16:24:49+08:00">
                 2018-10-11
               </time>
             
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  79
+                  378
                 </span>
               
 
@@ -442,7 +442,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1
+                  2
                 </span>
               
             </div>
@@ -467,7 +467,19 @@
       
 
       
-        <h1 id="裴蜀定理"><a href="#裴蜀定理" class="headerlink" title="裴蜀定理"></a>裴蜀定理</h1><p>$<br>$<br>若a,b是整数，且gcd(a,b)=d, 那么对于任意的整数x,y, ax+by都一定是d的倍数。特别地，一定存在整数x,y使ax+by=d成立。<br>$<br>$<br>它的一个重要的推论是：a,b互质的充要条件是存在整数x,y使ax+by=1。</p>
+        <h1 id="裴蜀定理"><a href="#裴蜀定理" class="headerlink" title="裴蜀定理"></a><strong>裴蜀定理</strong></h1><p>$<br>$<br>若a,b是整数，且gcd(a,b)=d, 那么对于任意的整数x,y, ax+by都一定是d的倍数。特别地，一定存在整数x,y使ax+by=d成立。<br>$<br>$<br>它的一个重要的推论是：a,b互质的充要条件是存在整数x,y使ax+by=1。<br>$<br>$</p>
+<blockquote>
+<p><strong>例题</strong></p>
+<h1 id="计数器"><a href="#计数器" class="headerlink" title="计数器"></a><strong>计数器</strong></h1><p>$<br>$</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><strong>题目描述</strong></h2><p>有一个计数器，计数器的初始值为0，每次操作你可以把计数器的值加上$a_1,a_2,\cdots , a_n$中的任意一个整数，操作次数不限（可以为0次），问计数器的值对m取模后有几种可能？</p>
+</blockquote>
+<h2 id="输入描述："><a href="#输入描述：" class="headerlink" title="输入描述："></a><strong>输入描述：</strong></h2><p>第一行两个整数n,m<br>接下来一行n个整数表示$a_1,a_2,\cdots , a_n$<br>$1\leq n\leq 100$<br>$1\leq m, a_1, a_2,\cdots ,a_n\leq 1000000000$</p>
+<h2 id="输出描述："><a href="#输出描述：" class="headerlink" title="输出描述："></a><strong>输出描述：</strong></h2><p>输出一个整数表示答案</p>
+<h2 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a><strong>示例1</strong></h2><blockquote>
+<p><strong>输入</strong><br><code>3 6</code><br><code>6 4 8</code></p>
+<p><strong>输出</strong><br><code>3</code></p>
+</blockquote>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a><strong>Code</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;cstdlib&gt;</span><br><span class="line">#include &lt;cmath&gt;</span><br><span class="line">#include &lt;cctype&gt;</span><br><span class="line">#include &lt;string&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line">#include &lt;queue&gt;</span><br><span class="line">#include &lt;set&gt;</span><br><span class="line">#include &lt;map&gt;</span><br><span class="line">#include &lt;ctime&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line">#include &lt;fstream&gt;</span><br><span class="line">#include &lt;list&gt;</span><br><span class="line">#include &lt;iomanip&gt;</span><br><span class="line">#include &lt;numeric&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">typedef long long ll;</span><br><span class="line">typedef unsigned long long ull;</span><br><span class="line">#define ms(s) memset(s, 0, sizeof(s))</span><br><span class="line">const int inf = 0x3f3f3f3f;</span><br><span class="line">int n, m, s[105];</span><br><span class="line">int main(int argc, char * argv[]) </span><br><span class="line">&#123;</span><br><span class="line">    ios::sync_with_stdio(false);</span><br><span class="line">    cin.tie(0);</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    int tmp = m;</span><br><span class="line">    for(int i=0; i&lt;n; i++)</span><br><span class="line">    	cin &gt;&gt; s[i];</span><br><span class="line">    for(int i=0; i&lt;n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">    	tmp = __gcd(tmp, s[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; m/tmp &lt;&lt; endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -688,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#裴蜀定理"><span class="nav-number">1.</span> <span class="nav-text">裴蜀定理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#裴蜀定理"><span class="nav-number">1.</span> <span class="nav-text">裴蜀定理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计数器"><span class="nav-number">2.</span> <span class="nav-text">计数器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">2.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入描述："><span class="nav-number">2.2.</span> <span class="nav-text">输入描述：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出描述："><span class="nav-number">2.3.</span> <span class="nav-text">输出描述：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#示例1"><span class="nav-number">2.4.</span> <span class="nav-text">示例1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">2.5.</span> <span class="nav-text">Code</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -722,7 +734,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.2k</span>
+    <span title="Site words total count">6.5k</span>
   
 </div>
 
