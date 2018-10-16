@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-08-13T18:15:15.531Z</updated>
+  <updated>2018-10-16T16:35:32.718Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux命令</title>
+    <link href="http://vingkin.github.io/linux%E5%91%BD%E4%BB%A4/linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://vingkin.github.io/linux命令/linux命令/</id>
+    <published>2018-10-16T15:43:07.000Z</published>
+    <updated>2018-10-16T16:35:32.718Z</updated>
+    
+    <summary type="html">
+    
+      linux命令
+    
+    </summary>
+    
+      <category term="linux命令" scheme="http://vingkin.github.io/categories/linux%E5%91%BD%E4%BB%A4/"/>
+    
+    
+      <category term="linux命令" scheme="http://vingkin.github.io/tags/linux%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>高斯消元</title>

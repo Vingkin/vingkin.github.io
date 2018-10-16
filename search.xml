@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[linux命令]]></title>
+    <url>%2Flinux%E5%91%BD%E4%BB%A4%2Flinux%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[linux命令1 mkdir 创建文件夹 mkdir demo 2 ls 显示文件和目录信息 ls -a 查询所有文件，包涵文件名以.开头的隐藏文件 3 cp 将原文件复制到目标文件 cp -r dir1 dir2 复制dir1目录所有东西到dir2 4 rm 删除 rm -r 文件/文件夹 5 find 查找 find 查找位置 -name 文件名 -print 查找文件 find 18300 -name a.cpp -print 6 cat 显示文本文件内容 cat a.cpp 7 less 分页显示文件内容，可用PgDn和PgUp翻页 less a.cpp less -N a.cpp 显示行号 8 groupadd 添加用户组 groupadd vingkin 9 groupdel 删除指定用户组 groupdel vingkin 10 useradd 添加用户 -g 指定用户所属的主用户组 -G 指定用户的附加用户组 -n 取消建立以用户名称为名的用户组 -r 建立系统账号 -s 指定用户登录shell -u 指定用户ID号 -m 自动建立用户登录后的用户主目录 -d 指定用户登陆后的主用户目录 useradd -g g1 -G g2, g3 user1 建立用户user1，g1为主用户组，g2和g3为附加用户组groups user1 显示user1所属的用户组 11 passwd 建立用户的登录密码 passwd user1 设置user1的登录密码 12 ps 显示系统进程的状态和属性 ps -r 显示正在运行的进程 ps -a 显示所有终端上运行的进程 ps -efj 显示所有进程 13 fg 将指定作业号的作业从后台切换至前台 fg 作业号 fg 1 14 bg 将指定作业号的后台暂停进程继续运行 bg 作业号 bg 1 15 jobs 显示当前控制台中的后台进程的状态 jobs]]></content>
+      <categories>
+        <category>linux命令</category>
+      </categories>
+      <tags>
+        <tag>linux命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[高斯消元]]></title>
     <url>%2FACM%2F%E6%95%B0%E8%AE%BA%2F%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%2F%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%2F</url>
     <content type="text"><![CDATA[高斯消元 模板 12345678910111213141516171819202122232425262728293031323334// 此模板只能解决有解的情况，// 但是可以通过定义解决无穷解与无解的情况// c[][]储存的是系数矩阵// b[]储存的是尾数矩阵// 最终a[][]是一个对角线矩阵void Gauss()&#123; for(int i=1; i&lt;=n; i++) &#123; for(int j=i; j&lt;=n; j++) &#123; if(fabs(c[j][i])&gt;eps) &#123; for(int k=1; k&lt;=n; k++) &#123; swap(c[i][k], c[j][k]); &#125; swap(b[i], b[j]); &#125; &#125; for(int j=1; j&lt;=n; j++) &#123; if(i==j) continue; double rate = c[j][i]/c[i][i]; for(int k=i; k&lt;=n; k++) c[j][k] -= c[i][k]*rate; b[j] -= b[i]*rate; &#125; &#125; for(int i=1; i&lt;n; i++) printf(&quot;%.3lf &quot;, b[i]/c[i][i]); printf(&quot;%.3lf\n&quot;, b[n]/c[n][n]);&#125;]]></content>
