@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-10-16T16:35:32.718Z</updated>
+  <updated>2018-10-22T06:40:02.010Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>那时的你 那时的我</title>
+    <link href="http://vingkin.github.io/%E6%97%A5%E8%AE%B0/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/"/>
+    <id>http://vingkin.github.io/日记/慕然回首/慕然回首/</id>
+    <published>2018-10-22T04:36:09.000Z</published>
+    <updated>2018-10-22T06:40:02.010Z</updated>
+    
+    <summary type="html">
+    
+      突然想起了高一时的点点滴滴的...
+    
+    </summary>
+    
+      <category term="日记" scheme="http://vingkin.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="慕然回首" scheme="http://vingkin.github.io/categories/%E6%97%A5%E8%AE%B0/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/"/>
+    
+    
+      <category term="日记" scheme="http://vingkin.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="慕然回首" scheme="http://vingkin.github.io/tags/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git学习指南</title>
+    <link href="http://vingkin.github.io/Git/Git%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/Git%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    <id>http://vingkin.github.io/Git/Git学习指南/Git学习指南/</id>
+    <published>2018-10-21T06:59:07.000Z</published>
+    <updated>2018-10-21T15:37:56.259Z</updated>
+    
+    <summary type="html">
+    
+      Git学习指南
+    
+    </summary>
+    
+      <category term="Git" scheme="http://vingkin.github.io/categories/Git/"/>
+    
+      <category term="Git学习指南" scheme="http://vingkin.github.io/categories/Git/Git%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+    
+      <category term="Git" scheme="http://vingkin.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>linux命令</title>
@@ -91,7 +137,7 @@
     <link href="http://vingkin.github.io/ACM/%E6%8E%92%E5%BA%8F/Sonya-and-Robots/"/>
     <id>http://vingkin.github.io/ACM/排序/Sonya-and-Robots/</id>
     <published>2018-08-09T10:28:34.000Z</published>
-    <updated>2018-10-11T09:14:12.367Z</updated>
+    <updated>2018-10-21T14:44:39.710Z</updated>
     
     <summary type="html">
     
