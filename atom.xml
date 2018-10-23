@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-10-22T06:40:02.010Z</updated>
+  <updated>2018-10-23T16:26:53.751Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Board</title>
+    <link href="http://vingkin.github.io/ACM/%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/Board/"/>
+    <id>http://vingkin.github.io/ACM/染色问题/Board/</id>
+    <published>2018-10-23T15:22:34.000Z</published>
+    <updated>2018-10-23T16:26:53.751Z</updated>
+    
+    <summary type="html">
+    
+      Nowcoder 国庆 Day6 B
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="染色问题" scheme="http://vingkin.github.io/categories/ACM/%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="染色问题" scheme="http://vingkin.github.io/tags/%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>那时的你 那时的我</title>
@@ -137,7 +159,7 @@
     <link href="http://vingkin.github.io/ACM/%E6%8E%92%E5%BA%8F/Sonya-and-Robots/"/>
     <id>http://vingkin.github.io/ACM/排序/Sonya-and-Robots/</id>
     <published>2018-08-09T10:28:34.000Z</published>
-    <updated>2018-10-21T14:44:39.710Z</updated>
+    <updated>2018-10-22T06:44:46.220Z</updated>
     
     <summary type="html">
     

@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="高斯消元," />
+  <meta name="keywords" content="染色问题," />
 
 
 
@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="算法竞赛进阶指南">
-<meta name="keywords" content="高斯消元">
+<meta name="description" content="Nowcoder 国庆 Day6 B">
+<meta name="keywords" content="染色问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高斯消元">
-<meta property="og:url" content="http://vingkin.github.io/ACM/数论/高斯消元/高斯消元/index.html">
+<meta property="og:title" content="Board">
+<meta property="og:url" content="http://vingkin.github.io/ACM/染色问题/Board/index.html">
 <meta property="og:site_name" content="Vingkin">
-<meta property="og:description" content="算法竞赛进阶指南">
+<meta property="og:description" content="Nowcoder 国庆 Day6 B">
 <meta property="og:locale" content="zh-Han">
-<meta property="og:updated_time" content="2018-08-13T18:15:15.531Z">
+<meta property="og:updated_time" content="2018-10-23T16:26:53.751Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高斯消元">
-<meta name="twitter:description" content="算法竞赛进阶指南">
+<meta name="twitter:title" content="Board">
+<meta name="twitter:description" content="Nowcoder 国庆 Day6 B">
 
 
 
@@ -139,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://vingkin.github.io/ACM/数论/高斯消元/高斯消元/"/>
+  <link rel="canonical" href="http://vingkin.github.io/ACM/染色问题/Board/"/>
 
 
 
 
 
-  <title>高斯消元 | Vingkin</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Board | Vingkin</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -305,12 +305,12 @@
   
   
 
-  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-ACM" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://vingkin.github.io/ACM/数论/高斯消元/高斯消元/">
+    <link itemprop="mainEntityOfPage" href="http://vingkin.github.io/ACM/染色问题/Board/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Vingkin">
@@ -337,7 +337,7 @@
     
         
         
-          <h1 class="post-title" itemprop="name headline">高斯消元</h1>
+          <h1 class="post-title" itemprop="name headline">Board</h1>
         
 
         <div class="post-meta">
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-14T02:07:48+08:00">
-                2018-08-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-23T23:22:34+08:00">
+                2018-10-23
               </time>
             
 
@@ -365,8 +365,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-08-14T02:15:15+08:00">
-                2018-08-14
+              <time title="Post modified" itemprop="dateModified" datetime="2018-10-24T00:26:53+08:00">
+                2018-10-24
               </time>
             
           </span>
@@ -395,19 +395,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ACM/数论/" itemprop="url" rel="index">
-                    <span itemprop="name">数论</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ACM/数论/高斯消元/" itemprop="url" rel="index">
-                    <span itemprop="name">高斯消元</span>
+                  <a href="/categories/ACM/染色问题/" itemprop="url" rel="index">
+                    <span itemprop="name">染色问题</span>
                   </a>
                 </span>
 
@@ -437,7 +426,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  201
+                  386
                 </span>
               
 
@@ -453,7 +442,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1
+                  2
                 </span>
               
             </div>
@@ -461,7 +450,7 @@
 
           
               <div class="post-description">
-                  算法竞赛进阶指南
+                  Nowcoder 国庆 Day6 B
               </div>
           
 
@@ -478,10 +467,16 @@
       
 
       
-        <h1 id="高斯消元"><a href="#高斯消元" class="headerlink" title="高斯消元"></a>高斯消元</h1><blockquote>
-<p>模板</p>
+        <h1 id="Board"><a href="#Board" class="headerlink" title="Board"></a>Board</h1><p>链接：<a href="https://www.nowcoder.com/acm/contest/206/B" target="_blank" rel="noopener">https://www.nowcoder.com/acm/contest/206/B</a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>恬恬有一个$n\times n$的数组。她在用这个数组玩游戏：<br>开始时，数组中每一个元素都是0。<br>恬恬会做某些操作。在一次操作中，她可以将某一行的所有元素同时加上一个值，也可以将某一列的所有元素同时加上一个值。<br>在几次操作后，一个元素被隐藏了。你能帮助她回忆隐藏的数是几吗？</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行一个整数n$(1\leq n\leq 1000)$。<br>接下来n行每行n个整数表示数组a。<br>第(i+1)行的第j个元素表示$a_{i,j}$$(a_{i,j}=-1或0\leq a_{i,j}\leq 10000)$。-1表示隐藏的元素。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>仅一个整数表示答案。</p>
+<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><blockquote>
+<p>输入<br>$3$<br>$1$  $2$ $1$<br>$0$ $-1$ $0$<br>$0$  $1$ $0$</p>
+<p>输出<br>$1$</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">// 此模板只能解决有解的情况，</span><br><span class="line">// 但是可以通过定义解决无穷解与无解的情况</span><br><span class="line">// c[][]储存的是系数矩阵</span><br><span class="line">// b[]储存的是尾数矩阵</span><br><span class="line">// 最终a[][]是一个对角线矩阵</span><br><span class="line">void Gauss()</span><br><span class="line">&#123;</span><br><span class="line">	for(int i=1; i&lt;=n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for(int j=i; j&lt;=n; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if(fabs(c[j][i])&gt;eps)</span><br><span class="line">			&#123;</span><br><span class="line">				for(int k=1; k&lt;=n; k++)</span><br><span class="line">				&#123;</span><br><span class="line">					swap(c[i][k], c[j][k]);</span><br><span class="line">				&#125;</span><br><span class="line">				swap(b[i], b[j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		for(int j=1; j&lt;=n; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if(i==j) continue;</span><br><span class="line">			double rate = c[j][i]/c[i][i];</span><br><span class="line">			for(int k=i; k&lt;=n; k++)</span><br><span class="line">				c[j][k] -= c[i][k]*rate;</span><br><span class="line">			b[j] -= b[i]*rate;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for(int i=1; i&lt;n; i++)</span><br><span class="line">    	printf(&quot;%.3lf &quot;, b[i]/c[i][i]);</span><br><span class="line">    printf(&quot;%.3lf\n&quot;, b[n]/c[n][n]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>题目其实就是一个染色问题，假设有n种颜色，那么每次插入值就相当于插入了n个各不相同的颜色。最后，每个颜色的个数应该相等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int maxn = 1005;</span><br><span class="line">int n, tmp[maxn], s[maxn][maxn];</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	for(int i=0; i&lt;n; i++)</span><br><span class="line">		for(int j=0; j&lt;n; j++)</span><br><span class="line">			cin &gt;&gt; s[i][j];</span><br><span class="line">	memset(tmp, 0, sizeof tmp);</span><br><span class="line">	for(int i=0; i&lt;n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for(int j=0; j&lt;n; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if(s[i][j]!=-1)</span><br><span class="line">				tmp[(i+j)%n] += s[i][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	sort(tmp, tmp+n);</span><br><span class="line">	cout &lt;&lt; tmp[1]-tmp[0] &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -505,7 +500,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/高斯消元/" rel="tag"><i class="fa fa-tag"></i> 高斯消元</a>
+            <a href="/tags/染色问题/" rel="tag"><i class="fa fa-tag"></i> 染色问题</a>
           
         </div>
       
@@ -518,8 +513,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/ACM/数论/盛金公式/盛金公式/" rel="next" title="盛金公式">
-                <i class="fa fa-chevron-left"></i> 盛金公式
+              <a href="/日记/慕然回首/慕然回首/" rel="next" title="那时的你 那时的我">
+                <i class="fa fa-chevron-left"></i> 那时的你 那时的我
               </a>
             
           </div>
@@ -527,10 +522,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/linux命令/linux命令/" rel="prev" title="linux命令">
-                linux命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -706,7 +697,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#高斯消元"><span class="nav-number">1.</span> <span class="nav-text">高斯消元</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Board"><span class="nav-number">1.</span> <span class="nav-text">Board</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入描述"><span class="nav-number">1.2.</span> <span class="nav-text">输入描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出描述"><span class="nav-number">1.3.</span> <span class="nav-text">输出描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例："><span class="nav-number">1.4.</span> <span class="nav-text">实例：</span></a></li></ol></li></ol></div>
             
 
           </div>
