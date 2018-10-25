@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Vingkin">
 <meta property="og:description" content="Nowcoder 国庆 Day6 B">
 <meta property="og:locale" content="zh-Han">
-<meta property="og:updated_time" content="2018-10-23T16:26:53.751Z">
+<meta property="og:updated_time" content="2018-10-24T16:11:00.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Board">
 <meta name="twitter:description" content="Nowcoder 国庆 Day6 B">
@@ -365,8 +365,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-10-24T00:26:53+08:00">
-                2018-10-24
+              <time title="Post modified" itemprop="dateModified" datetime="2018-10-25T00:11:00+08:00">
+                2018-10-25
               </time>
             
           </span>
@@ -472,8 +472,7 @@
 <h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行一个整数n$(1\leq n\leq 1000)$。<br>接下来n行每行n个整数表示数组a。<br>第(i+1)行的第j个元素表示$a_{i,j}$$(a_{i,j}=-1或0\leq a_{i,j}\leq 10000)$。-1表示隐藏的元素。</p>
 <h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>仅一个整数表示答案。</p>
 <h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><blockquote>
-<p>输入<br>$3$<br>$1$  $2$ $1$<br>$0$ $-1$ $0$<br>$0$  $1$ $0$</p>
-<p>输出<br>$1$</p>
+<p><strong>输入</strong><br><code>3</code><br><code>1  2 1</code><br><code>0 -1 0</code><br><code>0  1 0</code><br><strong>输出</strong><br><code>1</code></p>
 </blockquote>
 <p>题目其实就是一个染色问题，假设有n种颜色，那么每次插入值就相当于插入了n个各不相同的颜色。最后，每个颜色的个数应该相等。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int maxn = 1005;</span><br><span class="line">int n, tmp[maxn], s[maxn][maxn];</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	for(int i=0; i&lt;n; i++)</span><br><span class="line">		for(int j=0; j&lt;n; j++)</span><br><span class="line">			cin &gt;&gt; s[i][j];</span><br><span class="line">	memset(tmp, 0, sizeof tmp);</span><br><span class="line">	for(int i=0; i&lt;n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for(int j=0; j&lt;n; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if(s[i][j]!=-1)</span><br><span class="line">				tmp[(i+j)%n] += s[i][j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	sort(tmp, tmp+n);</span><br><span class="line">	cout &lt;&lt; tmp[1]-tmp[0] &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -522,6 +521,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ACM/前缀和/Molly-s-Chemicals/" rel="prev" title="Molly's Chemicals">
+                Molly's Chemicals <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -602,7 +605,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -731,7 +734,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.2k</span>
+    <span title="Site words total count">8.7k</span>
   
 </div>
 

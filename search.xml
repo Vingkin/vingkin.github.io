@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Molly's Chemicals]]></title>
+    <url>%2FACM%2F%E5%89%8D%E7%BC%80%E5%92%8C%2FMolly-s-Chemicals%2F</url>
+    <content type="text"><![CDATA[Molly’s Chemicals链接：http://codeforces.com/contest/776/problem/C 题目描述Molly Hooper has n different kinds of chemicals arranged in a line. Each of the chemicals has an affection value, The i-th of them has affection value $a_i$. Molly wants Sherlock to fall in love with her. She intends to do this by mixing a contiguous segment of chemicals together to make a love potion with total affection value as a non-negative integer power of k. Total affection value of a continuous segment of chemicals is the sum of affection values of each chemical in that segment. Help her to do so in finding the total number of such segments. InputThe first line of input contains two integers, n and k, the number of chemicals and the number, such that the total affection value is a non-negative power of this number k.$(1\leq n\leq 10^5, 1\leq |k|\leq 10)$. Next line contains n integers $a_1, a_2,\cdots , a_n(-10^9\leq a_i\leq 10^9)$—affection values of chemicals. OutputOutput a single integer—the number of valid segments. Examples input4 22 2 2 2output8input4 -33 -6 -3 12output3 题意大致是求数组中某一段的和等于k的次幂，即sum[r]-sum[l]==pow(k,x);枚举数组的话是$O(n^2)$，对于1e5来说肯定是超时的，所以转变思路sum[r]-pow(k,x)==sum[l]。转而枚举前缀和的一边和k的幂。注意k是可以为负数的，所以不能先全部把ma[s[i]]++预处理出来，可能出现l&gt;r的情况从而计数重复。 1234567891011121314151617181920212223242526272829303132333435363738#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1e5+5;int n, k;long long s[maxn];map&lt;long long, int&gt; ma;set&lt;long long&gt; a;int main()&#123; ma.clear(); a.clear(); cin &gt;&gt; n &gt;&gt; k; s[0] = 0; for(int i=1; i&lt;=n; i++) &#123; cin &gt;&gt; s[i]; s[i] += s[i-1]; &#125; long long tmp = 1; for(int i=1; i&lt;=60; i++) &#123; if(tmp&gt;1e14) break; a.insert(tmp); tmp *= k; &#125; long long ans = 0; ma[0] = 1; for(int i=1; i&lt;=n; i++) &#123; for(auto j=a.begin(); j!=a.end(); j++) &#123; ans += ma[s[i]-*j]; &#125; ma[s[i]]++; &#125; cout &lt;&lt; ans &lt;&lt; endl; return 0;&#125;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>前缀和</category>
+      </categories>
+      <tags>
+        <tag>思维</tag>
+        <tag>前缀和</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Board]]></title>
     <url>%2FACM%2F%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98%2FBoard%2F</url>
-    <content type="text"><![CDATA[Board链接：https://www.nowcoder.com/acm/contest/206/B 题目描述恬恬有一个$n\times n$的数组。她在用这个数组玩游戏：开始时，数组中每一个元素都是0。恬恬会做某些操作。在一次操作中，她可以将某一行的所有元素同时加上一个值，也可以将某一列的所有元素同时加上一个值。在几次操作后，一个元素被隐藏了。你能帮助她回忆隐藏的数是几吗？ 输入描述第一行一个整数n$(1\leq n\leq 1000)$。接下来n行每行n个整数表示数组a。第(i+1)行的第j个元素表示$a_{i,j}$$(a_{i,j}=-1或0\leq a_{i,j}\leq 10000)$。-1表示隐藏的元素。 输出描述仅一个整数表示答案。 实例： 输入$3$$1$ $2$ $1$$0$ $-1$ $0$$0$ $1$ $0$ 输出$1$ 题目其实就是一个染色问题，假设有n种颜色，那么每次插入值就相当于插入了n个各不相同的颜色。最后，每个颜色的个数应该相等。 1234567891011121314151617181920212223#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1005;int n, tmp[maxn], s[maxn][maxn];int main()&#123; cin &gt;&gt; n; for(int i=0; i&lt;n; i++) for(int j=0; j&lt;n; j++) cin &gt;&gt; s[i][j]; memset(tmp, 0, sizeof tmp); for(int i=0; i&lt;n; i++) &#123; for(int j=0; j&lt;n; j++) &#123; if(s[i][j]!=-1) tmp[(i+j)%n] += s[i][j]; &#125; &#125; sort(tmp, tmp+n); cout &lt;&lt; tmp[1]-tmp[0] &lt;&lt; endl; return 0;&#125;]]></content>
+    <content type="text"><![CDATA[Board链接：https://www.nowcoder.com/acm/contest/206/B 题目描述恬恬有一个$n\times n$的数组。她在用这个数组玩游戏：开始时，数组中每一个元素都是0。恬恬会做某些操作。在一次操作中，她可以将某一行的所有元素同时加上一个值，也可以将某一列的所有元素同时加上一个值。在几次操作后，一个元素被隐藏了。你能帮助她回忆隐藏的数是几吗？ 输入描述第一行一个整数n$(1\leq n\leq 1000)$。接下来n行每行n个整数表示数组a。第(i+1)行的第j个元素表示$a_{i,j}$$(a_{i,j}=-1或0\leq a_{i,j}\leq 10000)$。-1表示隐藏的元素。 输出描述仅一个整数表示答案。 实例： 输入31 2 10 -1 00 1 0输出1 题目其实就是一个染色问题，假设有n种颜色，那么每次插入值就相当于插入了n个各不相同的颜色。最后，每个颜色的个数应该相等。 1234567891011121314151617181920212223#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1005;int n, tmp[maxn], s[maxn][maxn];int main()&#123; cin &gt;&gt; n; for(int i=0; i&lt;n; i++) for(int j=0; j&lt;n; j++) cin &gt;&gt; s[i][j]; memset(tmp, 0, sizeof tmp); for(int i=0; i&lt;n; i++) &#123; for(int j=0; j&lt;n; j++) &#123; if(s[i][j]!=-1) tmp[(i+j)%n] += s[i][j]; &#125; &#125; sort(tmp, tmp+n); cout &lt;&lt; tmp[1]-tmp[0] &lt;&lt; endl; return 0;&#125;]]></content>
       <categories>
         <category>ACM</category>
         <category>染色问题</category>
