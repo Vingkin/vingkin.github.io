@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[灰魔法师]]></title>
+    <url>%2FACM%2F%E6%80%9D%E7%BB%B4%2F%E7%81%B0%E9%AD%94%E6%B3%95%E5%B8%88%2F</url>
+    <content type="text"><![CDATA[灰魔法师链接：https://www.nowcoder.com/acm/contest/215/A 题目描述“White shores, and beyond. A far green country under a swift sunrise.”—灰魔法师 给出长度为n的序列a, 求有多少对数对$(i,j)$$(1 \leq i &lt; j \leq n)$满足 $a_i + a_j$为完全平方数。 输入描述 第一行一个整数 n $(1\leq n\leq 10^5)$第二行 n 个整数 $a_i$ $(1\leq a_i\leq 10^5)$ 输出描述 输出一个整数，表示满足上述条件的数对个数。 示例 输入31 3 6输出2说明满足条件的有$(1,2),(2,3)$两对。 代码123456789101112131415161718192021#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1e6+5;int vis[maxn];long long ans = 0, n;int main()&#123; int x; cin &gt;&gt; n; for(int i=1; i&lt;=n; i++) &#123; cin &gt;&gt; x; for(int j=1; j&lt;=500; j++) &#123; if(j*j-x&gt;=0) ans += vis[j*j-x]; &#125; vis[x]++; &#125; cout &lt;&lt; ans &lt;&lt; endl; return 0;&#125;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>思维</category>
+      </categories>
+      <tags>
+        <tag>思维</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Molly's Chemicals]]></title>
     <url>%2FACM%2F%E5%89%8D%E7%BC%80%E5%92%8C%2FMolly-s-Chemicals%2F</url>
     <content type="text"><![CDATA[Molly’s Chemicals链接：http://codeforces.com/contest/776/problem/C 题目描述Molly Hooper has n different kinds of chemicals arranged in a line. Each of the chemicals has an affection value, The i-th of them has affection value $a_i$. Molly wants Sherlock to fall in love with her. She intends to do this by mixing a contiguous segment of chemicals together to make a love potion with total affection value as a non-negative integer power of k. Total affection value of a continuous segment of chemicals is the sum of affection values of each chemical in that segment. Help her to do so in finding the total number of such segments. InputThe first line of input contains two integers, n and k, the number of chemicals and the number, such that the total affection value is a non-negative power of this number k.$(1\leq n\leq 10^5, 1\leq |k|\leq 10)$. Next line contains n integers $a_1, a_2,\cdots , a_n(-10^9\leq a_i\leq 10^9)$—affection values of chemicals. OutputOutput a single integer—the number of valid segments. Examples input4 22 2 2 2output8input4 -33 -6 -3 12output3 题意大致是求数组中某一段的和等于k的次幂，即sum[r]-sum[l]==pow(k,x);枚举数组的话是$O(n^2)$，对于1e5来说肯定是超时的，所以转变思路sum[r]-pow(k,x)==sum[l]。转而枚举前缀和的一边和k的幂。注意k是可以为负数的，所以不能先全部把ma[s[i]]++预处理出来，可能出现l&gt;r的情况从而计数重复。 1234567891011121314151617181920212223242526272829303132333435363738#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1e5+5;int n, k;long long s[maxn];map&lt;long long, int&gt; ma;set&lt;long long&gt; a;int main()&#123; ma.clear(); a.clear(); cin &gt;&gt; n &gt;&gt; k; s[0] = 0; for(int i=1; i&lt;=n; i++) &#123; cin &gt;&gt; s[i]; s[i] += s[i-1]; &#125; long long tmp = 1; for(int i=1; i&lt;=60; i++) &#123; if(tmp&gt;1e14) break; a.insert(tmp); tmp *= k; &#125; long long ans = 0; ma[0] = 1; for(int i=1; i&lt;=n; i++) &#123; for(auto j=a.begin(); j!=a.end(); j++) &#123; ans += ma[s[i]-*j]; &#125; ma[s[i]]++; &#125; cout &lt;&lt; ans &lt;&lt; endl; return 0;&#125;]]></content>
@@ -9,8 +21,8 @@
         <category>前缀和</category>
       </categories>
       <tags>
-        <tag>思维</tag>
         <tag>前缀和</tag>
+        <tag>思维</tag>
       </tags>
   </entry>
   <entry>
@@ -28,7 +40,7 @@
   <entry>
     <title><![CDATA[那时的你 那时的我]]></title>
     <url>%2F%E8%AE%B0%2F%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96%2F%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96%2F</url>
-    <content type="text"><![CDATA[那时的你 &nbsp; 那时的我 2018.10.22 &nbsp; 周一 &nbsp; 小雨 不知道为什么前天晚上突然想起了高一时和胡志恒的点点滴滴。突然回忆涌入脑海，不免有点伤感。总的来说就是很可惜吧。现在想起来，你给我的感觉就是很真实，可是或许就是在错误的时间遇到了正确的你吧。中途你删过我好友，可是不知道为什么，我们俩的聊天记录竟然还在！！！之后你说过“你不喜欢软弱的人”、“不要再觉得可能”，现在到看这些，不免还是有点心痛。当然也痛恨当时的软弱。现在早已不再软弱了，可是你也就消失不见了。现在才发现当时我们竟然说了这么多，然后就是时隔两年多的沉默。记得当时是11月16号旅游的，前天晚上我答应你帮你下一点bigbang的歌，然后我们就莫名其妙的在一起了，在分开后，你说当时真的很感动，其实这种话是最让人难过的了。当然只是在一起了两个星期，不知道为什么这两个星期的事情我几乎一点也想不起来，只记得你冲过去抱了周跃，我懵了，然后聊天记录记录了一切。当时你无聊的时候还会找找我，突然感觉当时自己的情商真的好低。对了，想起来了我们准备一起去食堂吃午饭来着，然后莫名其妙没吃成，或许这就是缘分吧，注定了要分开。聊天记录停留在了2014.2.28。哇，都快五年了，时间过的可太快了，两年前的一句“看到高总说说我还以为你弯了”，开始了我们时隔好久的对话，当然，也几乎只有那么一次，然后就到了现在。以后还能见到的话都是缘分的吧，我们也早就不是一个世界的人了，喜欢也是不可能的了吧，只是现在好想抱抱你，当时的我一次也没抱过你，不过还是算了吧，再见吧。]]></content>
+    <content type="text"><![CDATA[那时的你 &nbsp; 那时的我 2018.10.22 &nbsp; 周一 &nbsp; 小雨 不知道为什么前天晚上突然想起了高一时和胡志恒的点点滴滴。突然回忆涌入脑海，不免有点伤感。总的来说就是很可惜吧。现在想起来，你给我的感觉就是很真实，可是或许就是在错误的时间遇到了正确的你吧。中途你删过我好友，可是不知道为什么，我们俩的聊天记录竟然还在！！！之后你说过“你不喜欢软弱的人”、“不要再觉得可能”，现在到看这些，不免还是有点心痛。当然也痛恨当时的软弱。现在早已不再软弱了，可是你也就消失不见了。现在才发现当时我们竟然说了这么多，然后就是时隔两年多的沉默。 记得当时是11月16号旅游的，前天晚上我答应你帮你下一点bigbang的歌，然后我们就莫名其妙的在一起了，在分开后，你说当时真的很感动，其实这种话是最让人难过的了。当然只是在一起了两个星期，不知道为什么这两个星期的事情我几乎一点也想不起来，只记得你冲过去抱了周跃，我懵了，然后聊天记录记录了一切。当时你无聊的时候还会找找我，突然感觉当时自己的情商真的好低。对了，想起来了我们准备一起去食堂吃午饭来着，然后莫名其妙没吃成，或许这就是缘分吧，注定了要分开。聊天记录停留在了2014.2.28。哇，都快五年了，时间过的可太快了，两年前的一句“看到高总说说我还以为你弯了”，开始了我们时隔好久的对话，当然，也几乎只有那么一次，然后就到了现在。 以后还能见到的话都是缘分的吧，我们也早就不是一个世界的人了，喜欢也是不可能的了吧，只是现在好想抱抱你，当时的我一次也没抱过你，不过还是算了吧，再见吧。]]></content>
       <categories>
         <category>记</category>
         <category>慕然回首</category>
@@ -122,10 +134,10 @@
         <category>逆元</category>
       </categories>
       <tags>
+        <tag>思维</tag>
         <tag>逆元</tag>
         <tag>Codeforces</tag>
         <tag>归并排序</tag>
-        <tag>思维</tag>
       </tags>
   </entry>
   <entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-10-25T05:26:58.414Z</updated>
+  <updated>2018-10-27T05:36:58.079Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>灰魔法师</title>
+    <link href="http://vingkin.github.io/ACM/%E6%80%9D%E7%BB%B4/%E7%81%B0%E9%AD%94%E6%B3%95%E5%B8%88/"/>
+    <id>http://vingkin.github.io/ACM/思维/灰魔法师/</id>
+    <published>2018-10-27T03:53:02.000Z</published>
+    <updated>2018-10-27T05:36:58.079Z</updated>
+    
+    <summary type="html">
+    
+      Nowcoder Wannafly挑战赛27 A
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://vingkin.github.io/categories/ACM/"/>
+    
+      <category term="思维" scheme="http://vingkin.github.io/categories/ACM/%E6%80%9D%E7%BB%B4/"/>
+    
+    
+      <category term="思维" scheme="http://vingkin.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Molly&#39;s Chemicals</title>
     <link href="http://vingkin.github.io/ACM/%E5%89%8D%E7%BC%80%E5%92%8C/Molly-s-Chemicals/"/>
     <id>http://vingkin.github.io/ACM/前缀和/Molly-s-Chemicals/</id>
     <published>2018-10-24T15:50:40.000Z</published>
-    <updated>2018-10-25T05:26:58.414Z</updated>
+    <updated>2018-10-25T05:29:13.831Z</updated>
     
     <summary type="html">
     
@@ -34,9 +56,9 @@
       <category term="前缀和" scheme="http://vingkin.github.io/categories/ACM/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
     
-      <category term="思维" scheme="http://vingkin.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
-    
       <category term="前缀和" scheme="http://vingkin.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+      <category term="思维" scheme="http://vingkin.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
   </entry>
   
@@ -67,7 +89,7 @@
     <link href="http://vingkin.github.io/%E8%AE%B0/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/"/>
     <id>http://vingkin.github.io/记/慕然回首/慕然回首/</id>
     <published>2018-10-22T04:36:09.000Z</published>
-    <updated>2018-10-25T05:19:12.013Z</updated>
+    <updated>2018-10-27T05:42:10.180Z</updated>
     
     <summary type="html">
     
@@ -242,13 +264,13 @@
       <category term="逆元" scheme="http://vingkin.github.io/categories/ACM/%E9%80%86%E5%85%83/"/>
     
     
+      <category term="思维" scheme="http://vingkin.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
+    
       <category term="逆元" scheme="http://vingkin.github.io/tags/%E9%80%86%E5%85%83/"/>
     
       <category term="Codeforces" scheme="http://vingkin.github.io/tags/Codeforces/"/>
     
       <category term="归并排序" scheme="http://vingkin.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
-    
-      <category term="思维" scheme="http://vingkin.github.io/tags/%E6%80%9D%E7%BB%B4/"/>
     
   </entry>
   
