@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vingkin.github.io/"/>
-  <updated>2018-10-27T05:36:58.079Z</updated>
+  <updated>2018-10-28T15:50:49.191Z</updated>
   <id>http://vingkin.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有点迷茫</title>
+    <link href="http://vingkin.github.io/%E8%AE%B0/%E6%9C%89%E7%82%B9%E8%BF%B7%E8%8C%AB/%E6%9C%89%E7%82%B9%E8%BF%B7%E8%8C%AB/"/>
+    <id>http://vingkin.github.io/记/有点迷茫/有点迷茫/</id>
+    <published>2018-10-27T14:55:59.000Z</published>
+    <updated>2018-10-28T15:50:49.191Z</updated>
+    
+    <summary type="html">
+    
+      记
+    
+    </summary>
+    
+      <category term="记" scheme="http://vingkin.github.io/categories/%E8%AE%B0/"/>
+    
+      <category term="有点迷茫" scheme="http://vingkin.github.io/categories/%E8%AE%B0/%E6%9C%89%E7%82%B9%E8%BF%B7%E8%8C%AB/"/>
+    
+    
+      <category term="记" scheme="http://vingkin.github.io/tags/%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>灰魔法师</title>
@@ -89,7 +111,7 @@
     <link href="http://vingkin.github.io/%E8%AE%B0/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/%E6%85%95%E7%84%B6%E5%9B%9E%E9%A6%96/"/>
     <id>http://vingkin.github.io/记/慕然回首/慕然回首/</id>
     <published>2018-10-22T04:36:09.000Z</published>
-    <updated>2018-10-27T05:42:10.180Z</updated>
+    <updated>2018-10-28T15:34:24.127Z</updated>
     
     <summary type="html">
     
